@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial;
+    height: 100%;
+}
+
+/* Gaya Dasar */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 10px;
+  }
+
+.rightcolumn h2{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row2{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Gaya Header */
+header {
+    background-color: #019267;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.icon {
+    float: left;
+    margin-left: 10px;
+    padding-bottom: 5px;
+}
+
+/* Gaya Navigasi */
+.navbar {
+    padding: 10px 0;
+    margin: 0px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #FDFFA9; /* Ubah warna saat dihover */
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+}
+
+/* Gaya Konten */
+.tentang{
+    background-color: white;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.tentang h3{
+    margin-bottom: 10px;
+}
+
+.tentang p{
+    margin-bottom: 20px;
+}
+
+.tentang ul{
+    margin-bottom: 20px;
+}
+
+.tentang li{
+    list-style: inside;
+}
+
+.artikel {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.artikel li{
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+.content {
+    background-color: #fff;
+    float: left;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Tambahkan efek bayangan */
+}
+
+.conten h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.content a{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.content a:hover{
+    color: #00C897;
+    text-decoration: underline;
+}
+
+.image-content {
+    width: 100%;
+    height: auto;
+}
+
+.kotak{
+    width:230px;
+    height:230px;
+    background:#ffd365;
+    border-radius: 3000px;
+    display: table;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.artikel-img{
+    width: 300px;
+}
+
+.kotak p{
+    font-size: 20px;
+    font-weight: bold;
+    vertical-align: middle ;
+    text-align: center;
+    display: table-cell;
+}
+
+.kotak2{
+    width: 230px;
+    height: 210px;
+    background:#fff;
+    border-radius: 8px;
+    display: table;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.kotak2 h4{
+    margin: 5px;
+}
+
+.kotak2 a{
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+.kotak2 a:hover{
+    color: #00C897;
+}
+
+.kotak::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.alasan{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+.contact {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Gaya Footer */
+footer{
+    overflow: auto;
+    bottom: 0%;
+    position: relative;
+    display: flex;
+    background-color: #019267;
+    justify-content: center;
+}
+
+.footer {
+    float: left;
+    width: 33,3%;
+    color: #fff;
+    padding: 20px;
+    margin-top: 0px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover{
+    color: #FDFFA9;
+}
+
+.footer h5{
+    color: white;
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.footer li{
+    list-style: none;
+}
+
+/* Hak Cipta */
+.copyright {
+    background-color: #ffd365;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 14px;
+}

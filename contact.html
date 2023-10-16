@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedHub</title>
+    <link rel="icon" href="icon2.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- MENU NAVIGASI -->
+    <header>
+        <div class="navbar">
+            <img src="img/icon2.png" alt="icon" width="4%" class="icon">
+            <ul>
+                <li>
+                    <a href="home.html">BERANDA</a>
+                </li>
+                <li>
+                    <a href="article.html">ARTIKEL</a>
+                </li>
+                <li>
+                    <a href="about.html">TENTANG KAMI</a>
+                </li>
+                <li>
+                    <a href="contact.html">HUBUNGI KAMI</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- AKHIR MENU NAVIGASI -->
+
+    <!-- FORMULIR KONTAK -->
+    <div class="contact">
+        <h2>Hubungi Kami</h2>
+        <form action="send_email.php" method="post">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Kirim">
+        </form>
+        <div class="success-message" style="display: none;">Terima kasih atas pesan Anda!</div>
+    </div>
+    <!-- AKHIR FORMULIR KONTAK -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div>
+            <div class="footer">
+                <h5>MedHub</h5>
+                <ul>
+                    <li><a href="/contact.html">Hubungi Kami</a></li>
+                    <li><a href="/about.html">Tentang Kami </a></li>
+                </ul>
+              </div>
+              <div class="footer">
+                <h5>Layanan</h5>
+                <a href="#">Konsultasi</a>
+              </div>
+              <div class="footer">
+                <h5>Social Media Kami</h5>
+                <ul>
+                  <li>Facebook</li>
+                  <li>Twitter</li>
+                  <li>Instagram</li>
+                  <li>Youtube</li>
+                  <li>WhatsApp</li>
+                </ul>
+              </div>
+        </div>
+    </footer>
+      <div class="copyright">
+          <p>&copy; MedHub 2023 Indonesia</p>
+      </div>
+    <!-- AKHIR FOOTER -->
+</body>
+</html>
